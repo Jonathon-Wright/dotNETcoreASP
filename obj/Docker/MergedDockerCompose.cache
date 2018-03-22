@@ -1,0 +1,11 @@
+services:
+  chapter2releasedotnetcoredocker:
+    build:
+      context: c:\TFS\source\repos\Chapter2ReleaseDotNETCoreDocker
+      dockerfile: Chapter2ReleaseDotNETCoreDocker/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: chapter2releasedotnetcoredocker
+    ports:
+    - 80/tcp
+version: '3.0'

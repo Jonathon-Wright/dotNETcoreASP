@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  chapter2releasedotnetcoredocker:
+    image: chapter2releasedotnetcoredocker
+    build:
+      context: .
+      dockerfile: Chapter2ReleaseDotNETCoreDocker/Dockerfile
